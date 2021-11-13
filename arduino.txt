@@ -25,7 +25,7 @@ void loop() {
  
     HTTPClient http;  //Declare an object of class HTTPClient
  
-    http.begin("http://link");  //Specify request destination
+    http.begin("http://jsonplaceholder.typicode.com/users/1");  //Specify request destination
     int httpCode = http.GET();                                  //Send the request
  
     if (httpCode > 0) { //Check the returning code
