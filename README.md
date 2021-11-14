@@ -8,4 +8,9 @@ Using API live crypto
 * [binance](https://binance.com) >> https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
 
 * http api make for arduino useing copy x path [thingspeak](https://thingspeak.com/apps)
+
 * https://jsonplaceholder.typicode.com/
+
+
+
+## Adding Chart.JS ....

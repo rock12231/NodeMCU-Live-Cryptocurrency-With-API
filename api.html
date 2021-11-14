@@ -1,7 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Cryto API</title>
+</head>
 <body>
     <h2>API Responce</h2>
+    <div id="api">Loading</div>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
 </body>
+
 <script>
     var burl = "https://api.binance.com";
     var query = '/api/v1/ticker/24hr';
@@ -11,9 +24,50 @@
     ourRequest.open('GET', url, true);
     ourRequest.onload = function () {
         console.log(ourRequest.responseText);
-        document.body.innerHTML = ourRequest.responseText;
+        document.getElementById('api').innerHTML = ourRequest.responseText;
     }
     ourRequest.send();
+
+      // <block:setup:1>
+        const labels = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+        ];
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [0, 10, 5, 2, 20, 30, 45],
+            }]
+        };
+        // </block:setup>
+
+        // <block:config:0>
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+        // </block:config>
+
+        module.exports = {
+            actions: [],
+            config: config,
+        };
+</script>
+<script>
+    // === include 'setup' then 'config' above ===
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
 </script>
 
 </html>
