@@ -11,6 +11,6 @@ Using API live crypto
 
 * https://jsonplaceholder.typicode.com/
 
-
+* https://thingspeak.com/login?skipSSOCheck=true
 
 ## Adding Chart.JS ....
