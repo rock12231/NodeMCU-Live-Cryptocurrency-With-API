@@ -6,7 +6,7 @@ Using http API live crypto currency print on oled i2c 0.96inch 128x64 display & 
 <table>
     <tbody>
         <tr>
-            <td><strong>Pin</strong></td>
+            <td><strong>Display</strong></td>
             <td><strong>ESP8266</strong></td>
         </tr>
         <tr>
