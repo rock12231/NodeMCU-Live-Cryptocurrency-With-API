@@ -12,7 +12,7 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 const char* ssid = "Avinash";
-const char* password = "Avi";
+const char* password = "";
 String payload;
 
 void setup() {
@@ -30,17 +30,17 @@ void loop() {
   if (WiFi.status() == WL_CONNECTED) 
   {
     HTTPClient http;
-    http.begin("http://api.thingspeak.com/apps/thinghttp/send_request?api_key=ZW67LQXPRSLIVU6C");
+    http.begin("http://api.thingspeak.com/apps/thinghttp/send_request?api_key=NXTWW453ZTTP9UNY");
     int httpCode = http.GET();
     if (httpCode > 0) 
     { 
       payload = http.getString();  
-      Serial.println(payload); 
+      //Serial.println(payload); 
       int len = payload.length();
-      Serial.println(len);
+      //Serial.println(len);
       payload.remove(len - 7, 7);
-      Serial.println(payload);  
-      payload.remove(0,10);
+      //Serial.println(payload);  
+      payload.remove(0,7);
       Serial.println(payload);         
     }
     http.end();   
@@ -48,11 +48,11 @@ void loop() {
   display.setTextColor(WHITE);
   display.setTextSize(2);
   display.setCursor(0,0);
-  display.print("BTC in Rs ");
+  display.print("BTC in USD");
   display.print(payload);
   display.display(); 
   display.clearDisplay();
-  delay(5000);
+  delay(1000);
 }
 
 
