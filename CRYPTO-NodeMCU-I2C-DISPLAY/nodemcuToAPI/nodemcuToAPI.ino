@@ -2,7 +2,7 @@
 #include <ESP8266HTTPClient.h>
  
 const char* ssid = "Avinash";
-const char* password = "Avi7071955977";
+const char* password = "Avi";
 
 void setup () {
   Serial.begin(115200);

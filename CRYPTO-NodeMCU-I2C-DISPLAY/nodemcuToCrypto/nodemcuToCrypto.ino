@@ -12,7 +12,7 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 const char* ssid = "Avinash";
-const char* password = "Avi7071955977";
+const char* password = "Avi";
 String payload;
 
 void setup() {

@@ -9,7 +9,7 @@
 
 //------- Replace the following! ------
 char ssid[] = "Avi";       // your network SSID (name)
-char password[] = "7071955977@";  // your network key
+char password[] = "@";  // your network key
 
 
 WiFiClientSecure client;
