@@ -2,6 +2,7 @@
 
 Using http API live crypto currency print on oled i2c 0.96inch 128x64 display & NodeMCU
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/rock12231/Live-Cryptocurrency-With-API/edit/master/CRYPTO-NodeMCU-I2C-DISPLAY/README.md)](https://hits.seeyoufarm.com)                    
 
 <table>
     <tbody>
