@@ -3,22 +3,6 @@
 Using http API live crypto currency print on oled i2c 0.96inch 128x64 display & NodeMCU
 
 
-<style>
-.rntcred {
-    background-color: #c33;
-    color: #fff!important;
-}
-.rntcblack {
-    background-color: #333;
-}
-.rntclgray {
-    background-color: #eee;
-    color: #000!important;
-}
-.rntcyellow {
-    background-color: #fc0;
-}
-</style>
 <table>
     <tbody>
         <tr>
@@ -27,19 +11,19 @@ Using http API live crypto currency print on oled i2c 0.96inch 128x64 display & 
         </tr>
         <tr>
             <td>Vin</td>
-            <td><span class="rnthl rntcred">3.3V</span></td>
+            <td><span style="background-color: #c33;color: #fff!important;" >3.3V</span></td>
         </tr>
         <tr>
             <td>GND</td>
-            <td><span class="rnthl rntcblack">GND</span></td>
+            <td><span style="background-color: #333;" >GND</span></td>
         </tr>
         <tr>
             <td>SCL</td>
-            <td><span class="rnthl rntclgray">GPIO 5</span> (D1)</td>
+            <td><span style="background-color: #eee;color: #000!important;" >GPIO 5</span> (D1)</td>
         </tr>
         <tr>
             <td>SDA</td>
-            <td><span class="rnthl rntcyellow">GPIO 4</span> (D2)</td>
+            <td><span style="background-color: #fc0;" >GPIO 4</span> (D2)</td>
         </tr>
     </tbody>
 </table>
