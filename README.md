@@ -1,16 +1,46 @@
-# Live-Cryptocurrency-With-API
-Using API live crypto 
+# CRYPTO-NodeMCU-I2C-DISPLAY
 
-* [ESP GET POST API](https://randomnerdtutorials.com/esp8266-nodemcu-http-get-post-arduino/)
+Using http API live crypto currency print on oled i2c 0.96inch 128x64 display & NodeMCU
 
-* [CoinMarketCap](https://coinmarketcap.com/api/documentation/v1/#section/Standards-and-Conventions)
 
-* [binance](https://binance.com) >> https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Pin</strong></td>
+            <td><strong>ESP8266</strong></td>
+        </tr>
+        <tr>
+            <td>Vin</td>
+            <td><span style="background-color: #c33;color: #fff!important;" >3.3V</span></td>
+        </tr>
+        <tr>
+            <td>GND</td>
+            <td><span style="background-color: #333;" >GND</span></td>
+        </tr>
+        <tr>
+            <td>SCL</td>
+            <td><span style="background-color: #eee;color: #000!important;" >GPIO 5</span> (D1)</td>
+        </tr>
+        <tr>
+            <td>SDA</td>
+            <td><span style="background-color: #fc0;" >GPIO 4</span> (D2)</td>
+        </tr>
+    </tbody>
+</table>
 
-* http api make for arduino useing copy x path [thingspeak](https://thingspeak.com/apps)
+#### Screen shot 1
+<img src="https://github.com/rock12231/Live-Cryptocurrency-With-API/blob/master/CRYPTO-NodeMCU-I2C-DISPLAY/ss2.jpg" alt="Coder GIF" width="600" height="400">
 
-* https://jsonplaceholder.typicode.com/
 
-* https://thingspeak.com/login?skipSSOCheck=true
+#### Screen shot 2
+<img src="https://github.com/rock12231/Live-Cryptocurrency-With-API/blob/master/CRYPTO-NodeMCU-I2C-DISPLAY/ss1.png" width="600" height="400">
 
-## Adding Chart.JS ....
+#### Video
+<div align="center">
+
+
+https://user-images.githubusercontent.com/37548802/149674993-58ce1085-cb75-410e-ba39-908c4f776c84.mp4
+
+  
+
+</div>
